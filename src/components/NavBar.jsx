@@ -5,16 +5,16 @@ export default function NavBar() {
     <nav className="p-4 bg-slate-600">
       <ul className="flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-20">
         <li>
-          <Link to="/Home">Home</Link>
+          <Link to="/home">Home</Link>
         </li>
         <li>
-          <Link to="/List">List</Link>
+          <Link to="/list">List</Link>
         </li>
         <li>
-          <Link to="/Population">Population</Link>
+          <Link to="/population">Population</Link>
         </li>
         <li>
-          <Link to="/Gdp">Gdp</Link>
+          <Link to="/gdp">Gdp</Link>
         </li>
       </ul>
     </nav>
