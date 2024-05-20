@@ -5,7 +5,7 @@ export default function NavBar() {
     <nav className="p-4 bg-slate-600">
       <ul className="flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-20">
         <li>
-          <Link to="/home">Home</Link>
+          <Link to="/">Home</Link>
         </li>
         <li>
           <Link to="/list">List</Link>
