@@ -14,7 +14,7 @@ export default function NavBar() {
           <Link to="/population">Population</Link>
         </li>
         <li>
-          <Link to="/gdp">Gdp</Link>
+          <Link to="/gdp">GDP</Link>
         </li>
       </ul>
     </nav>

@@ -18,7 +18,7 @@ export default function List() {
       <h1 className="mb-4 text-3xl font-bold text-center text-white sm:text-left">
         List of Countries from South America
       </h1>
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 lg:grid-cols-4">
+      <card className="grid grid-cols-1 gap-6 sm:grid-cols-3 lg:grid-cols-4">
         {countries.map((country) => (
           <div key={country.id} className="p-4 bg-white rounded-lg">
             <img
@@ -49,7 +49,7 @@ export default function List() {
             </p>
           </div>
         ))}
-      </div>
+      </card>
     </div>
   );
 }
