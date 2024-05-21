@@ -7,17 +7,19 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const GdpPie = ({ countries }) => {
+  const gdpCountries = countries.filter((country) => country.gdp_billions > 0 && country.gdp_billions);
+
   const data = {
-    labels: countries.map((country) => (country.name ? country.name : "N/A")),
+    labels: gdpCountries.map((country) => (country.gdp_billions !== 0 ? country.name : '')),
     datasets: [
       {
         label: "GDP (Billions)",
-        data: countries.map((country) => country.gdp_billions),
+        data: gdpCountries.map((country) => country.gdp_billions),
         backgroundColor: [
-          "#FF6384",
-          "#D4D6B9",
+          "#635255",
+          "#10FFCB",
           "#F0F66E",
-          "#4BC0C0",
+          "#8F3985",
           "#9966FF",
           "#66717E",
           "#FF6384",
@@ -25,8 +27,7 @@ const GdpPie = ({ countries }) => {
           "#FFCE56",
           "#4BC0C0",
           "#A8C686",
-          "#FF9F40",
-          "#D1CAA1",
+          "#E7DFC6",
         ],
       },
     ],
