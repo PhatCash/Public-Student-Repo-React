@@ -15,10 +15,10 @@ export default function List() {
 
   return (
     <div className="p-4 bg-gradient-to-t from-slate-400 to-slate-600">
-      <h1 className="mb-4 text-3xl font-bold text-center text-white sm:text-left">
+      <h2 className="mb-4 text-3xl font-bold text-center text-white sm:text-left">
         List of Countries from South America
-      </h1>
-      <card className="grid grid-cols-1 gap-6 sm:grid-cols-3 lg:grid-cols-4">
+      </h2>
+      <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 lg:grid-cols-4">
         {countries.map((country) => (
           <div key={country.id} className="p-4 bg-white rounded-lg">
             <img
@@ -30,9 +30,9 @@ export default function List() {
               }
               className="w-full mb-4"
             />
-            <h2 className="text-2xl font-bold">
+            <h3 className="text-2xl font-bold">
               {country.name ? country.name : "N/A"}
-            </h2>
+            </h3>
             <p>
               <strong>Population: </strong>
               {country.population ? country.population.toLocaleString() : "N/A"}
@@ -49,7 +49,7 @@ export default function List() {
             </p>
           </div>
         ))}
-      </card>
+      </div>
     </div>
   );
 }
