@@ -1,7 +1,4 @@
 import { Bar } from "react-chartjs-2";
-import FetchAPI from "./FetchAPI";
-import Loading from "./Loading";
-import Error from "./Error";
 
 // Items
 import {

@@ -7,10 +7,14 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from "chart.js";
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 const GdpPie = ({ countries }) => {
-  const gdpCountries = countries.filter((country) => country.gdp_billions > 0 && country.gdp_billions);
+  const gdpCountries = countries.filter(
+    (country) => country.gdp_billions > 0 && country.gdp_billions
+  );
 
   const data = {
-    labels: gdpCountries.map((country) => (country.gdp_billions !== 0 ? country.name : '')),
+    labels: gdpCountries.map((country) =>
+      country.gdp_billions !== 0 ? country.name : ""
+    ),
     datasets: [
       {
         label: "GDP (Billions)",
