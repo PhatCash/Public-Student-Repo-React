@@ -15,10 +15,8 @@ export default function Population() {
   }
 
   return (
-    <div className="h-screen p-4 text-white bg-gradient-to-t from-slate-400 to-slate-600">
-      <h2 className="mb-4 text-3xl font-bold text-center text-white sm:text-left">
-        Population of South American Countries
-      </h2>
+    <div className="div-layout">
+      <h2 className="h2-routes">Population of South American Countries</h2>
       <div className="w-full md:w-4/6 lg:w-5/6">
         <PopGraph countries={countries} />
       </div>

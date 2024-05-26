@@ -15,9 +15,7 @@ export default function List() {
 
   return (
     <div className="p-4 bg-gradient-to-t from-slate-400 to-slate-600">
-      <h2 className="mb-4 text-3xl font-bold text-center text-white sm:text-left">
-        List of Countries from South America
-      </h2>
+      <h2 className="h2-routes">List of Countries from South America</h2>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 lg:grid-cols-4">
         {countries.map((country) => (
           <div key={country.id} className="p-4 bg-white rounded-lg">
