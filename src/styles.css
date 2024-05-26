@@ -7,3 +7,31 @@
   margin: 0;
   padding: 0;
 }
+
+.h3-home {
+  margin-bottom: 0.5rem /* 8px */;
+  font-weight: 600;
+}
+
+.p-home {
+  margin-bottom: 1.5rem /* 24px */;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .h3-home {
+    font-size: 1.5rem /* 24px */;
+    line-height: 2rem /* 32px */;
+  }
+
+  .p-home {
+    font-size: 1.125rem /* 18px */;
+    line-height: 1.75rem /* 28px */;
+  }
+}
+
+@media (min-width: 640px) {
+  .p-home {
+    text-align: left;
+  }
+}
