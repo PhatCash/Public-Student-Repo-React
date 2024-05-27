@@ -17,7 +17,7 @@ export default function GDP() {
   return (
     <div className="div-layout">
       <h2 className="h2-routes">GDP of South American Countries</h2>
-      <div className="w-full sm:w-2/4 md:w-5/12 ">
+      <div className="mx-auto md:5/12">
         <GdpPie countries={countries} />
       </div>
     </div>

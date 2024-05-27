@@ -5,16 +5,36 @@ export default function NavBar() {
     <nav className="p-4 bg-slate-600">
       <ul className="flex flex-col items-center justify-center gap-2 sm:flex-row sm:gap-20">
         <li>
-          <Link to="/">Home</Link>
+          <Link
+            className="hover:text-cyan-400 hover:border-b-2 hover:border-cyan-400"
+            to="/"
+          >
+            Home
+          </Link>
         </li>
         <li>
-          <Link to="/list">List</Link>
+          <Link
+            className="hover:text-cyan-400 hover:border-b-2 hover:border-cyan-400"
+            to="/list"
+          >
+            List
+          </Link>
         </li>
         <li>
-          <Link to="/population">Population</Link>
+          <Link
+            className="hover:text-cyan-400 hover:border-b-2 hover:border-cyan-400"
+            to="/population"
+          >
+            Population
+          </Link>
         </li>
         <li>
-          <Link to="/gdp">GDP</Link>
+          <Link
+            className="hover:text-cyan-400 hover:border-b-2 hover:border-cyan-400"
+            to="/gdp"
+          >
+            GDP
+          </Link>
         </li>
       </ul>
     </nav>
