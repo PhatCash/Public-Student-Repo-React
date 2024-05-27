@@ -19,15 +19,17 @@ export default function List() {
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 lg:grid-cols-4">
         {countries.map((country) => (
           <div key={country.id} className="p-4 bg-white rounded-lg">
-            <img
-              src={country.flag_png ? country.flag_png : "N/A"}
-              alt={
-                country.flag_alt
-                  ? country.flag_alt
-                  : `A picture of the country ${countries.name}`
-              }
-              className="w-full mb-4"
-            />
+            <div className="w-32 h-32 ">
+              <img
+                src={country.flag_png ? country.flag_png : "N/A"}
+                alt={
+                  country.flag_alt
+                    ? country.flag_alt
+                    : `A picture of the country ${countries.name}`
+                }
+                className="w-full mb-4"
+              />
+            </div>
             <h3 className="text-2xl font-bold">
               {country.name ? country.name : "N/A"}
             </h3>
