@@ -7,3 +7,58 @@
   margin: 0;
   padding: 0;
 }
+
+/********** Tailwind Classes **********/
+.h3-home {
+  margin-bottom: 0.5rem /* 8px */;
+  font-weight: 600;
+}
+
+.p-home {
+  margin-bottom: 1.5rem /* 24px */;
+  text-align: center;
+}
+
+.h2-routes {
+  margin-bottom: 1rem /* 16px */;
+  font-size: 1.875rem /* 30px */;
+  line-height: 2.25rem /* 36px */;
+  font-weight: 700;
+  text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.div-layout {
+  height: 100vh;
+  padding: 1rem /* 16px */;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+  --tw-gradient-from: #94a3b8 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(148 163 184 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #475569 var(--tw-gradient-to-position);
+}
+
+@media (min-width: 768px) {
+  .h3-home {
+    font-size: 1.5rem /* 24px */;
+    line-height: 2rem /* 32px */;
+  }
+
+  .p-home {
+    font-size: 1.125rem /* 18px */;
+    line-height: 1.75rem /* 28px */;
+  }
+}
+
+@media (min-width: 640px) {
+  .p-home {
+    text-align: left;
+  }
+
+  .h2-routes {
+    text-align: left;
+  }
+}
